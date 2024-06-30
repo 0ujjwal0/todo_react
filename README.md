@@ -1,6 +1,6 @@
 # React Todo App 📝
 
-# 🔗 [tudu-react-app.vercel.app]
+# 🔗 [https://tudu-react-app.vercel.app]
 
 The "React Todo List with Local Storage" and "Drag and Drop" project is a web-based task management application developed using React, designed to empower users to organize their tasks effectively while utilizing local storage for data persistence. This project is hosted on vercel.
 
