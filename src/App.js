@@ -1,19 +1,18 @@
 import React, { useEffect } from "react";
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { HTML5Backend } from 'react-dnd-html5-backend';
-import { DndProvider } from 'react-dnd';
-import { Provider, useDispatch, useSelector } from 'react-redux';
-import { setTasks } from './store/tasksSlice';
-import store from './store/store';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { HTML5Backend } from "react-dnd-html5-backend";
+import { DndProvider } from "react-dnd";
+import { Provider, useDispatch, useSelector } from "react-redux";
+import { setTasks } from "./store/tasksSlice";
+import store from "./store/store";
 import TaskInput from "./components/Add";
 import TaskList from "./components/Show";
 import Greeting from "./components/greetings";
-import Footer from "./components/footer";
 
 const App = () => {
   const dispatch = useDispatch();
- useSelector((state) => state.tasks.tasks);
+  useSelector((state) => state.tasks.tasks);
 
   useEffect(() => {
     const storedTasks = localStorage.getItem("tasks");
@@ -31,16 +30,15 @@ const App = () => {
   return (
     <DndProvider backend={HTML5Backend}>
       <ToastContainer />
-      <div className="">
-      <div >
-      <Greeting/>
-      </div>
-      <div className="bg-purple-100  w-screen h-screen flex flex-col items-center justify-between gap-20 pt-16">
-        
+      <div className="bg-purple-100 h-screen">
+        <div>
+          <Greeting />
+        </div>
+
         <TaskInput />
-        <TaskList />
-        <Footer/>
-      </div>
+        <div>
+          <TaskList />
+        </div>
       </div>
     </DndProvider>
   );
