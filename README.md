@@ -96,9 +96,9 @@ Output: A styled header that changes greetings according to the time (e.g., "Goo
 
 - **Tasks Slice**: The `tasksSlice.js` handles the core actions for managing tasks in the application.
 #### Actions:
-**addTask**: Adds a new task to the state.
-**updateTask**: Updates an existing task based on its id.
-**deleteTask**: Removes a task from the state by its id.
+- **addTask**: Adds a new task to the state.
+- **updateTask**: Updates an existing task based on its id.
+- **deleteTask**: Removes a task from the state by its id.
 
 ## Deployment
 
